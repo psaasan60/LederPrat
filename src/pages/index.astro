@@ -3,23 +3,23 @@ import Layout from '../layouts/Layout.astro';
 
 const services = [
 	{
-		title: 'Sparring 1:1',
-		text: 'Faste samtaler der du kan tenke høyt om vanskelige beslutninger med noen som har stått i det selv.',
+		title: 'Fast sparring',
+		text: 'Ukentlige eller faste samtaler der du kan tenke høyt om drift, ansatte og vanskelige beslutninger med noen som har stått i det selv.',
 	},
 	{
-		title: 'Akutt rådgivning',
+		title: 'Akutt sparring',
 		text: 'Når noe haster — en konflikt, en krevende kunde, en beslutning som ikke kan vente til neste styremøte.',
 	},
 	{
-		title: 'Strategi og drift',
-		text: 'Hjelp til å prioritere riktig mellom daglig drift og de langsiktige veivalgene.',
+		title: 'Pilotprogram — 4 uker',
+		text: 'Fire ukentlige samtaler à 60 minutter. Fokus på prioritering, lederrollen, struktur, ansvar/delegering og krevende samtaler.',
 	},
 ];
 
 const testimonials = [
 	{
-		quote: 'Placeholder — sitat fra en kunde kommer her.',
-		author: 'Navn, Tittel, Bedrift',
+		quote: 'Placeholder — sitat fra en kunde kommer her når de første pilotkundene har gitt tilbakemelding.',
+		author: 'Navn, tittel, bedrift',
 	},
 ];
 ---
@@ -28,13 +28,14 @@ const testimonials = [
 	<!-- Hero -->
 	<section class="border-b border-line bg-paper px-6 py-24 sm:py-32">
 		<div class="mx-auto max-w-3xl text-center">
-			<p class="font-body text-sm font-semibold uppercase tracking-[0.2em] text-brass">For ledere i SMB</p>
+			<p class="font-body text-sm font-semibold uppercase tracking-[0.2em] text-brass">For ledere i små og mellomstore bedrifter</p>
 			<h1 class="mt-4 font-display text-4xl leading-tight text-ink sm:text-6xl">
-				Du trenger ikke lede alene
+				Lederrollen kan være ensom
 			</h1>
 			<p class="mx-auto mt-6 max-w-xl font-body text-lg leading-relaxed text-grey">
-				Leder Partner er sparringspartneren og ressursteamet du ikke har internt — bygget på år med
-				erfaring som leder i små og mellomstore bedrifter.
+				Man sitter ofte alene med ansvar, ansatte, vanskelige beslutninger og press — samtidig som man
+				skal være tryggheten for alle andre. Jeg hjelper eiere og ledere som trenger noen å tenke høyt
+				med.
 			</p>
 			<div class="mt-10 flex flex-wrap items-center justify-center gap-4">
 				<a
@@ -56,7 +57,13 @@ const testimonials = [
 	<!-- Tjenester -->
 	<section id="tjenester" class="border-b border-line bg-paper-dim px-6 py-20 sm:py-28">
 		<div class="mx-auto max-w-5xl">
-			<h2 class="font-display text-3xl text-ink sm:text-4xl">Hvordan jeg kan hjelpe</h2>
+			<p class="font-body text-sm font-semibold uppercase tracking-[0.2em] text-brass">Hvordan jeg kan hjelpe</p>
+			<h2 class="mt-3 font-display text-3xl text-ink sm:text-4xl">Trygg sparring, ærlige samtaler</h2>
+			<p class="mt-4 max-w-2xl font-body leading-relaxed text-grey">
+				Ikke klassisk teoretisk "business coaching" — men praktisk sparring fra en som kjenner
+				lederhverdagen fra innsiden. Jeg kommer ikke nødvendigvis med alle svarene, men jeg lytter,
+				utfordrer og hjelper deg å sortere tankene.
+			</p>
 			<div class="mt-12 grid gap-8 sm:grid-cols-3">
 				{
 					services.map((s) => (
@@ -73,14 +80,34 @@ const testimonials = [
 	<!-- Om meg -->
 	<section id="om" class="border-b border-line bg-paper px-6 py-20 sm:py-28">
 		<div class="mx-auto grid max-w-5xl items-center gap-12 sm:grid-cols-[0.8fr_1.2fr]">
-			<div class="aspect-4/5 border border-line bg-paper-dim"></div>
+			<div class="aspect-4/5 overflow-hidden border border-line bg-paper-dim">
+				<img src="/images/paul-aasan.jpg" alt="Paul Aasan" class="h-full w-full object-cover object-top" />
+			</div>
 			<div>
 				<p class="font-body text-sm font-semibold uppercase tracking-[0.2em] text-brass">Om meg</p>
-				<h2 class="mt-3 font-display text-3xl text-ink sm:text-4xl">Placeholder — din historie kommer her</h2>
-				<p class="mt-5 font-body leading-relaxed text-grey">
-					Her setter vi inn teksten om din bakgrunn som leder, hvorfor du startet Leder Partner, og hvem du
-					hjelper best. Send over det du har skrevet med ChatGPT så tilpasser vi denne teksten.
-				</p>
+				<h2 class="mt-3 font-display text-3xl text-ink sm:text-4xl">Lederlivet fra innsiden</h2>
+				<div class="mt-5 space-y-4 font-body leading-relaxed text-grey">
+					<p>
+						Jeg vet hvor mye ansvar det innebærer å drive en virksomhet — og hvor ensomt det til tider
+						kan være.
+					</p>
+					<p>
+						Gjennom mange år som daglig leder, virksomhetsdriver og prosjektansvarlig har jeg jobbet
+						tett på mennesker, drift, struktur, kunder, ansatte og krevende beslutninger. Jeg har
+						opplevd både vekst, omstilling, press og perioder hvor man står alene med ansvaret — blant
+						annet innen retail og butikkdrift, lyd/scene/event, tekniske AV-løsninger, ERP- og
+						systemarbeid, og prosjektledelse.
+					</p>
+					<p>
+						Fellesnevneren gjennom hele karrieren har vært mennesker: kommunikasjon, samarbeid,
+						motivasjon, kultur og praktisk ledelse i hverdagen.
+					</p>
+					<p>
+						I dag bruker jeg erfaringen som sparringspartner for småbedriftseiere og ledere som trenger
+						noen å tenke høyt med. Jeg tror mange ledere ikke trenger flere teorier — de trenger trygg
+						sparring, ærlige samtaler og noen som forstår virkeligheten bak lederrollen.
+					</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -105,16 +132,21 @@ const testimonials = [
 	<!-- Kontakt -->
 	<section id="kontakt" class="bg-ink px-6 py-20 text-center sm:py-28">
 		<div class="mx-auto max-w-xl">
-			<h2 class="font-display text-3xl text-paper sm:text-4xl">Klar for en sparringspartner?</h2>
+			<h2 class="font-display text-3xl text-paper sm:text-4xl">Ingen leder bør stå alene med alt</h2>
 			<p class="mt-4 font-body leading-relaxed text-paper/70">
 				Ta kontakt for en uforpliktende samtale om hvordan Leder Partner kan hjelpe deg og bedriften din.
 			</p>
-			<a
-				href="mailto:post@lederpartner.no"
-				class="mt-8 inline-flex items-center rounded-sm bg-brass px-8 py-3.5 font-body text-sm font-semibold text-ink transition-colors hover:bg-brass-soft"
-			>
-				post@lederpartner.no
-			</a>
+			<div class="mt-8 flex flex-col items-center gap-3">
+				<a
+					href="mailto:psaasan@gmail.com"
+					class="inline-flex items-center rounded-sm bg-brass px-8 py-3.5 font-body text-sm font-semibold text-ink transition-colors hover:bg-brass-soft"
+				>
+					psaasan@gmail.com
+				</a>
+				<a href="tel:+4791356000" class="font-body text-sm text-paper/70 hover:text-paper">
+					+47 913 56 000
+				</a>
+			</div>
 		</div>
 	</section>
 </Layout>
