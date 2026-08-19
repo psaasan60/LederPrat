@@ -1,0 +1,120 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const services = [
+	{
+		title: 'Sparring 1:1',
+		text: 'Faste samtaler der du kan tenke høyt om vanskelige beslutninger med noen som har stått i det selv.',
+	},
+	{
+		title: 'Akutt rådgivning',
+		text: 'Når noe haster — en konflikt, en krevende kunde, en beslutning som ikke kan vente til neste styremøte.',
+	},
+	{
+		title: 'Strategi og drift',
+		text: 'Hjelp til å prioritere riktig mellom daglig drift og de langsiktige veivalgene.',
+	},
+];
+
+const testimonials = [
+	{
+		quote: 'Placeholder — sitat fra en kunde kommer her.',
+		author: 'Navn, Tittel, Bedrift',
+	},
+];
+---
+
+<Layout>
+	<!-- Hero -->
+	<section class="border-b border-line bg-paper px-6 py-24 sm:py-32">
+		<div class="mx-auto max-w-3xl text-center">
+			<p class="font-body text-sm font-semibold uppercase tracking-[0.2em] text-brass">For ledere i SMB</p>
+			<h1 class="mt-4 font-display text-4xl leading-tight text-ink sm:text-6xl">
+				Du trenger ikke lede alene
+			</h1>
+			<p class="mx-auto mt-6 max-w-xl font-body text-lg leading-relaxed text-grey">
+				Leder Partner er sparringspartneren og ressursteamet du ikke har internt — bygget på år med
+				erfaring som leder i små og mellomstore bedrifter.
+			</p>
+			<div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+				<a
+					href="#kontakt"
+					class="inline-flex items-center rounded-sm bg-ink px-7 py-3.5 font-body text-sm font-semibold text-paper transition-colors hover:bg-ink-soft"
+				>
+					Book en uforpliktende samtale
+				</a>
+				<a
+					href="#tjenester"
+					class="inline-flex items-center rounded-sm border border-line px-7 py-3.5 font-body text-sm font-semibold text-ink transition-colors hover:border-ink"
+				>
+					Se hva jeg tilbyr
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Tjenester -->
+	<section id="tjenester" class="border-b border-line bg-paper-dim px-6 py-20 sm:py-28">
+		<div class="mx-auto max-w-5xl">
+			<h2 class="font-display text-3xl text-ink sm:text-4xl">Hvordan jeg kan hjelpe</h2>
+			<div class="mt-12 grid gap-8 sm:grid-cols-3">
+				{
+					services.map((s) => (
+						<div class="border border-line bg-paper p-8">
+							<h3 class="font-display text-xl text-ink">{s.title}</h3>
+							<p class="mt-3 font-body text-sm leading-relaxed text-grey">{s.text}</p>
+						</div>
+					))
+				}
+			</div>
+		</div>
+	</section>
+
+	<!-- Om meg -->
+	<section id="om" class="border-b border-line bg-paper px-6 py-20 sm:py-28">
+		<div class="mx-auto grid max-w-5xl items-center gap-12 sm:grid-cols-[0.8fr_1.2fr]">
+			<div class="aspect-4/5 border border-line bg-paper-dim"></div>
+			<div>
+				<p class="font-body text-sm font-semibold uppercase tracking-[0.2em] text-brass">Om meg</p>
+				<h2 class="mt-3 font-display text-3xl text-ink sm:text-4xl">Placeholder — din historie kommer her</h2>
+				<p class="mt-5 font-body leading-relaxed text-grey">
+					Her setter vi inn teksten om din bakgrunn som leder, hvorfor du startet Leder Partner, og hvem du
+					hjelper best. Send over det du har skrevet med ChatGPT så tilpasser vi denne teksten.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Referanser -->
+	<section id="referanser" class="border-b border-line bg-paper-dim px-6 py-20 sm:py-28">
+		<div class="mx-auto max-w-3xl text-center">
+			<h2 class="font-display text-3xl text-ink sm:text-4xl">Hva kundene sier</h2>
+			<div class="mt-10 space-y-8">
+				{
+					testimonials.map((t) => (
+						<blockquote>
+							<p class="font-display text-xl leading-snug text-ink italic">&ldquo;{t.quote}&rdquo;</p>
+							<footer class="mt-3 font-body text-sm uppercase tracking-wide text-grey-dim">{t.author}</footer>
+						</blockquote>
+					))
+				}
+			</div>
+		</div>
+	</section>
+
+	<!-- Kontakt -->
+	<section id="kontakt" class="bg-ink px-6 py-20 text-center sm:py-28">
+		<div class="mx-auto max-w-xl">
+			<h2 class="font-display text-3xl text-paper sm:text-4xl">Klar for en sparringspartner?</h2>
+			<p class="mt-4 font-body leading-relaxed text-paper/70">
+				Ta kontakt for en uforpliktende samtale om hvordan Leder Partner kan hjelpe deg og bedriften din.
+			</p>
+			<a
+				href="mailto:post@lederpartner.no"
+				class="mt-8 inline-flex items-center rounded-sm bg-brass px-8 py-3.5 font-body text-sm font-semibold text-ink transition-colors hover:bg-brass-soft"
+			>
+				post@lederpartner.no
+			</a>
+		</div>
+	</section>
+</Layout>
