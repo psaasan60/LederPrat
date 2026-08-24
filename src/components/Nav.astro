@@ -7,21 +7,17 @@ const links = [
 ];
 ---
 
-<header class="border-b border-line bg-paper">
-	<nav class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
-		<a href="/" class="flex items-center gap-3">
-			<img src="/logo/mark.png" alt="Paul Aasan | Leder Partner" class="h-14 w-14 rounded-sm" />
-			<span class="leading-none">
-				<span class="block font-display text-xl font-medium tracking-tighter text-ink">Paul Aasan</span>
-				<span class="mt-1.5 block font-body text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-brass">Leder Partner</span>
-			</span>
+<header class="border-b border-ink-soft bg-ink">
+	<nav class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-3">
+		<a href="/">
+			<img src="/logo/lockup-nav.png" alt="Paul Aasan | Leder Partner" class="h-12 w-auto" />
 		</a>
 
-		<ul class="hidden items-center gap-8 font-body text-sm font-medium text-grey sm:flex">
+		<ul class="hidden items-center gap-8 font-body text-sm font-medium text-paper/80 sm:flex">
 			{
 				links.map((link) => (
 					<li>
-						<a href={link.href} class="transition-colors hover:text-ink">
+						<a href={link.href} class="transition-colors hover:text-brass">
 							{link.label}
 						</a>
 					</li>
@@ -31,7 +27,7 @@ const links = [
 
 		<a
 			href="/#kontakt"
-			class="inline-flex items-center rounded-sm bg-ink px-5 py-2.5 font-body text-sm font-semibold text-paper transition-colors hover:bg-ink-soft"
+			class="inline-flex items-center rounded-sm bg-brass px-5 py-2.5 font-body text-sm font-semibold text-ink transition-colors hover:bg-brass-soft"
 		>
 			Book en samtale
 		</a>
