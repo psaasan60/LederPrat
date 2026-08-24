@@ -22,6 +22,7 @@ const {
 		<meta name="description" content={description} />
 		<title>{title === 'Paul Aasan | Lederprat' ? title : `${title} · Lederprat`}</title>
 		<link rel="icon" type="image/png" href="/favicon.png" />
+		<script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
 	</head>
 	<body>
 		<Nav />
@@ -29,5 +30,18 @@ const {
 			<slot />
 		</main>
 		<Footer />
+		<script is:inline>
+			document.addEventListener('DOMContentLoaded', () => {
+				if (window.netlifyIdentity) {
+					window.netlifyIdentity.on('init', (user) => {
+						if (!user) {
+							window.netlifyIdentity.on('login', () => {
+								document.location.href = '/admin/';
+							});
+						}
+					});
+				}
+			});
+		</script>
 	</body>
 </html>

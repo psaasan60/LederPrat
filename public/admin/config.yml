@@ -1,0 +1,53 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "home"
+    label: "Forside"
+    files:
+      - name: "forside"
+        label: "Forside-innhold"
+        file: "src/content/home/forside.md"
+        fields:
+          - { label: "HERO – Liten tekst over overskrift", name: "heroEyebrow", widget: "string" }
+          - { label: "HERO – Overskrift", name: "heroTitle", widget: "string", hint: "F.eks. \"Lederrollen kan være\"" }
+          - { label: "HERO – Uthevet ord (gull)", name: "heroHighlight", widget: "string", hint: "F.eks. \"ensom\"" }
+          - { label: "HERO – Undertekst", name: "heroText", widget: "text" }
+
+          - { label: "PRØVETIME-BOKS – Liten tekst", name: "trialEyebrow", widget: "string" }
+          - { label: "PRØVETIME-BOKS – Overskrift", name: "trialTitle", widget: "string" }
+          - { label: "PRØVETIME-BOKS – Tekst", name: "trialText", widget: "text" }
+
+          - { label: "TJENESTER – Liten tekst", name: "servicesEyebrow", widget: "string" }
+          - { label: "TJENESTER – Overskrift", name: "servicesTitle", widget: "string" }
+          - { label: "TJENESTER – Innledningstekst", name: "servicesText", widget: "text" }
+          - label: "TJENESTER – Liste"
+            name: "services"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Tittel", name: "title", widget: "string" }
+              - { label: "Tekst", name: "text", widget: "text" }
+
+          - { label: "OM MEG – Liten tekst", name: "omEyebrow", widget: "string" }
+          - { label: "OM MEG – Overskrift", name: "omTitle", widget: "string" }
+          - { label: "OM MEG – Bilde", name: "omImage", widget: "image" }
+          - { label: "OM MEG – Brødtekst", name: "body", widget: "markdown", hint: "Selve bio-teksten under Om meg" }
+
+          - label: "SITATER – Liste"
+            name: "testimonials"
+            widget: "list"
+            required: false
+            summary: "{{author}}"
+            fields:
+              - { label: "Sitat", name: "quote", widget: "text" }
+              - { label: "Forfatter", name: "author", widget: "string" }
+
+          - { label: "KONTAKT – Overskrift", name: "kontaktTitle", widget: "string" }
+          - { label: "KONTAKT – Tekst", name: "kontaktText", widget: "text" }
+          - { label: "KONTAKT – E-post", name: "email", widget: "string" }
+          - { label: "KONTAKT – Telefon", name: "phone", widget: "string" }
