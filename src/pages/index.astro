@@ -26,11 +26,14 @@ const testimonials = [
 
 <Layout>
 	<!-- Hero -->
-	<section class="border-b border-line bg-paper px-6 py-24 sm:py-32">
+	<section class="relative overflow-hidden border-b border-line bg-paper px-6 py-24 sm:py-32">
+		<div class="absolute inset-x-0 top-0 h-1.5 bg-linear-to-r from-steel via-brass to-steel"></div>
 		<div class="mx-auto max-w-3xl text-center">
-			<p class="font-body text-sm font-semibold uppercase tracking-[0.2em] text-brass">For ledere i små og mellomstore bedrifter</p>
-			<h1 class="mt-4 font-display text-4xl leading-tight text-ink sm:text-6xl">
-				Lederrollen kan være ensom
+			<p class="inline-block rounded-full bg-steel/10 px-4 py-1.5 font-body text-sm font-semibold uppercase tracking-[0.2em] text-steel">
+				For ledere i små og mellomstore bedrifter
+			</p>
+			<h1 class="mt-6 font-display text-4xl leading-tight text-ink sm:text-6xl">
+				Lederrollen kan være <span class="text-brass">ensom</span>
 			</h1>
 			<p class="mx-auto mt-6 max-w-xl font-body text-lg leading-relaxed text-grey">
 				Man sitter ofte alene med ansvar, ansatte, vanskelige beslutninger og press — samtidig som man
@@ -46,7 +49,7 @@ const testimonials = [
 				</a>
 				<a
 					href="#tjenester"
-					class="inline-flex items-center rounded-sm border border-line px-7 py-3.5 font-body text-sm font-semibold text-ink transition-colors hover:border-ink"
+					class="inline-flex items-center rounded-sm border-2 border-steel/30 px-7 py-3.5 font-body text-sm font-semibold text-ink transition-colors hover:border-steel"
 				>
 					Se hva jeg tilbyr
 				</a>
@@ -55,11 +58,11 @@ const testimonials = [
 	</section>
 
 	<!-- Tjenester -->
-	<section id="tjenester" class="border-b border-line bg-paper-dim px-6 py-20 sm:py-28">
+	<section id="tjenester" class="border-b border-line bg-ink px-6 py-20 sm:py-28">
 		<div class="mx-auto max-w-5xl">
 			<p class="font-body text-sm font-semibold uppercase tracking-[0.2em] text-brass">Hvordan jeg kan hjelpe</p>
-			<h2 class="mt-3 font-display text-3xl text-ink sm:text-4xl">Trygg sparring, ærlige samtaler</h2>
-			<p class="mt-4 max-w-2xl font-body leading-relaxed text-grey">
+			<h2 class="mt-3 font-display text-3xl text-paper sm:text-4xl">Trygg sparring, ærlige samtaler</h2>
+			<p class="mt-4 max-w-2xl font-body leading-relaxed text-paper/70">
 				Ikke klassisk teoretisk "business coaching" — men praktisk sparring fra en som kjenner
 				lederhverdagen fra innsiden. Jeg kommer ikke nødvendigvis med alle svarene, men jeg lytter,
 				utfordrer og hjelper deg å sortere tankene.
@@ -67,9 +70,9 @@ const testimonials = [
 			<div class="mt-12 grid gap-8 sm:grid-cols-3">
 				{
 					services.map((s) => (
-						<div class="border border-line bg-paper p-8">
-							<h3 class="font-display text-xl text-ink">{s.title}</h3>
-							<p class="mt-3 font-body text-sm leading-relaxed text-grey">{s.text}</p>
+						<div class="border-t-2 border-brass bg-ink-soft p-8">
+							<h3 class="font-display text-xl text-paper">{s.title}</h3>
+							<p class="mt-3 font-body text-sm leading-relaxed text-paper/60">{s.text}</p>
 						</div>
 					))
 				}
@@ -80,7 +83,7 @@ const testimonials = [
 	<!-- Om meg -->
 	<section id="om" class="border-b border-line bg-paper px-6 py-20 sm:py-28">
 		<div class="mx-auto grid max-w-5xl items-center gap-12 sm:grid-cols-[0.8fr_1.2fr]">
-			<div class="aspect-4/5 overflow-hidden border border-line bg-paper-dim">
+			<div class="aspect-4/5 overflow-hidden border-2 border-brass/60 p-2">
 				<img src="/images/paul-aasan.jpg" alt="Paul Aasan" class="h-full w-full object-cover object-top" />
 			</div>
 			<div>
@@ -113,15 +116,16 @@ const testimonials = [
 	</section>
 
 	<!-- Referanser -->
-	<section id="referanser" class="border-b border-line bg-paper-dim px-6 py-20 sm:py-28">
+	<section id="referanser" class="border-b border-mist-line bg-mist px-6 py-20 sm:py-28">
 		<div class="mx-auto max-w-3xl text-center">
-			<h2 class="font-display text-3xl text-ink sm:text-4xl">Hva kundene sier</h2>
+			<div class="font-display text-6xl leading-none text-steel-soft" aria-hidden="true">&ldquo;</div>
+			<h2 class="mt-2 font-display text-3xl text-ink sm:text-4xl">Hva kundene sier</h2>
 			<div class="mt-10 space-y-8">
 				{
 					testimonials.map((t) => (
 						<blockquote>
 							<p class="font-display text-xl leading-snug text-ink italic">&ldquo;{t.quote}&rdquo;</p>
-							<footer class="mt-3 font-body text-sm uppercase tracking-wide text-grey-dim">{t.author}</footer>
+							<footer class="mt-3 font-body text-sm uppercase tracking-wide text-steel">{t.author}</footer>
 						</blockquote>
 					))
 				}
@@ -134,7 +138,8 @@ const testimonials = [
 		<div class="mx-auto max-w-xl">
 			<h2 class="font-display text-3xl text-paper sm:text-4xl">Ingen leder bør stå alene med alt</h2>
 			<p class="mt-4 font-body leading-relaxed text-paper/70">
-				Ta kontakt for en uforpliktende samtale om hvordan Leder Partner kan hjelpe deg og bedriften din.
+				Ta kontakt for en uforpliktende samtale om hvordan Paul Aasan | Leder Partner kan hjelpe deg og
+				bedriften din.
 			</p>
 			<div class="mt-8 flex flex-col items-center gap-3">
 				<a
