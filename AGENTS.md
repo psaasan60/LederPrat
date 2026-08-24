@@ -1,20 +1,24 @@
 ## Prosjektfilosofi
 
-Leder Partner er et coaching-/rådgivningsprodukt for ledere i små og mellomstore bedrifter (SMB),
+Lederprat (tidligere kalt "Leder Partner" — byttet navn fordi et selskap i Stavanger allerede het
+det samme) er et coaching-/rådgivningsprodukt for ledere i små og mellomstore bedrifter (SMB),
 skapt av Paul basert på egen erfaring som leder. Produktet selger sparring og rådgivning til ledere
-som ikke har et ressursteam rundt seg.
+som ikke har et ressursteam rundt seg. Merkenavnet brukes gjennomgående som "Paul Aasan | Lederprat".
+Planlagt domene: lederprat.no.
 
 Nettsiden skal:
 - Selge produktet — tydelig budskap, tillitvekkende, ikke corporate-kaldt
 - Være enkel for Paul å drifte selv (samme mønster som breezeweb: Astro + Tailwind, evt. Decap CMS senere)
 - Kobles til en Facebook- og LinkedIn-profil for produktet
 
-Designspråk: varm ivory-bakgrunn, dyp marineblå/ink som primærfarge, brass/messing som aksent,
-Fraunces (display-serif) + Inter (body). Ikke gjenbruk The Breeze sin mørke Americana-stil — dette
-er et eget merke.
+Designspråk: varm ivory-bakgrunn, dyp marineblå/ink som primærfarge, brass/messing (gull) og
+stålblå som aksentfarger — hentet fra den faktiske LP-logoen. Fraunces (display-serif) + Inter
+(body). Logomerket ("LP") gjelder fortsatt siden Lederprat også starter på L og P. Ikke gjenbruk
+The Breeze sin mørke Americana-stil — dette er et eget merke.
 
-Status: tidlig skjelett med plassholder-tekst. Ekte innhold (om Paul, tjenestebeskrivelser, priser,
-målgruppe) skal hentes fra arbeidet han allerede har gjort med ChatGPT før sidene ferdigstilles.
+Status: forside med ekte innhold (om Paul fra CV, tjenester, "gratis prøvetime"-CTA). Venter på
+ekte kundesitater, evt. flere sider (tjenester i detalj, kontaktskjema), og publisering til
+GitHub/Netlify med domenet lederprat.no.
 
 ## Development
 
