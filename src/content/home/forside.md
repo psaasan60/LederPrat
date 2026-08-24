@@ -19,9 +19,7 @@ services:
 omEyebrow: "Om meg"
 omTitle: "Lederlivet fra innsiden"
 omImage: "/images/paul-aasan.jpg"
-testimonials:
-  - quote: "Placeholder — sitat fra en kunde kommer her når de første pilotkundene har gitt tilbakemelding."
-    author: "Navn, tittel, bedrift"
+testimonials: []
 kontaktTitle: "Ingen leder bør stå alene med alt"
 kontaktText: "Ta kontakt for en uforpliktende prat om hvordan Paul Aasan | Lederprat kan hjelpe deg og bedriften din."
 email: "psaasan@gmail.com"
