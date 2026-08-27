@@ -1,21 +1,14 @@
 ---
-heroEyebrow: For ledere i små og mellomstore bedrifter
-heroTitle: Lederrollen kan være
-heroHighlight: ensom
-heroText: Man sitter ofte alene med ansvar, ansatte, vanskelige beslutninger og
-  press — samtidig som man skal være tryggheten for alle andre. Jeg hjelper
-  eiere og ledere som trenger noen å tenke høyt med.
-trialEyebrow: Uforpliktende
-trialTitle: Book første timen — gratis
-trialText: Ingen forpliktelser, ingen selgerprat. Vi tar en uforpliktende
-  prøvetime på 30 minutter for å bli kjent og se om kjemien og formen stemmer —
-  før du eventuelt bestemmer deg for å gå videre.
-servicesEyebrow: Hvordan jeg kan hjelpe
-servicesTitle: Trygg sparring, ærlig prat
-servicesText: Ikke klassisk teoretisk "business coaching" — men praktisk
-  sparring fra en som kjenner lederhverdagen fra innsiden. Jeg kommer ikke
-  nødvendigvis med alle svarene, men jeg lytter, utfordrer og hjelper deg å
-  sortere tankene.
+heroEyebrow: "For ledere i SMB og håndverksbedrifter"
+heroTitle: "Lederrollen kan være"
+heroHighlight: "ensom"
+heroText: "Man sitter ofte alene med ansvar, ansatte, vanskelige beslutninger og press — samtidig som man skal være tryggheten for alle andre. Jeg hjelper eiere og ledere som trenger noen å tenke høyt med."
+trialEyebrow: "Uforpliktende"
+trialTitle: "Book første timen — gratis"
+trialText: "Ingen forpliktelser, ingen selgerprat. Vi tar en uforpliktende prøvetime på 30 minutter for å bli kjent og se om kjemien og formen stemmer — før du eventuelt bestemmer deg for å gå videre."
+servicesEyebrow: "Hvordan jeg kan hjelpe"
+servicesTitle: "Trygg sparring, ærlig prat"
+servicesText: "Ikke klassisk teoretisk \"business coaching\" — men praktisk sparring fra en som kjenner lederhverdagen fra innsiden. Jeg kommer ikke nødvendigvis med alle svarene, men jeg lytter, utfordrer og hjelper deg å sortere tankene."
 services:
   - title: Fast sparring
     text: Ukentlige eller faste prater der du kan tenke høyt om drift, ansatte og
